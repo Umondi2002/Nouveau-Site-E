@@ -1,0 +1,228 @@
+{
+  "site": {
+    "name": "EliteShop",
+    "description": "Notre site est le meilleur dans le domaine de commerce en ligne, certifié par Microsoft. Depuis 2023 nous avons connu une ascension fulgurante dans ce domaine, car nos clients sont toujours satisfaits de nos services.",
+    "copyright": "© 2025 EliteShop. Tous droits réservés.",
+    "contact": {
+      "email": "contacteliteshop@gmail.com",
+      "phone": "+243 893061955",
+      "address": "4 ème Rue Limete Industriel, OOO1 Kinshasa, République Démocratique du Congo"
+    },
+    "opening_hours": {
+      "weekdays": "9h - 18h",
+      "saturday": "10h - 16h",
+      "sunday": "Fermé"
+    }
+  },
+  "navigation": {
+    "main": [
+      {
+        "name": "Accueil",
+        "url": "index.html"
+      },
+      {
+        "name": "Produits",
+        "url": "products.html"
+      },
+      {
+        "name": "À propos",
+        "url": "about.html"
+      },
+      {
+        "name": "Blog",
+        "url": "blog.html"
+      },
+      {
+        "name": "Contact",
+        "url": "contact.html"
+      }
+    ],
+    "user": [
+      {
+        "name": "Panier",
+        "url": "cart.html",
+        "icon": "shopping-cart",
+        "badge": 3
+      },
+      {
+        "name": "Mon compte",
+        "url": "profile.html",
+        "icon": "user"
+      }
+    ]
+  },
+  "about": {
+    "history": {
+      "founded": 2024,
+      "description": "Notre site e-commerce est né de la passion pour offrir des produits de qualité à des prix abordables. Depuis nos débuts modestes, nous avons grandi pour devenir une référence dans notre secteur."
+    },
+    "values": [
+      {
+        "name": "Qualité",
+        "icon": "medal",
+        "description": "Nous sélectionnons rigoureusement nos produits pour vous garantir la meilleure qualité."
+      },
+      {
+        "name": "Satisfaction client",
+        "icon": "heart",
+        "description": "Votre satisfaction est notre priorité absolue. Nous faisons tout notre possible pour vous satisfaire."
+      },
+      {
+        "name": "Développement durable",
+        "icon": "leaf",
+        "description": "Nous nous engageons à réduire notre impact environnemental à chaque étape de notre activité."
+      }
+    ],
+    "team": [
+      {
+        "name": "Jonathan Umondi",
+        "position": "Fondateur & PDG",
+        "photo": "photos/Fondateur.jpg"
+      },
+      {
+        "name": "Sephora Bendela",
+        "position": "Directrice Marketing",
+        "photo": "photos/Sephora.jpeg"
+      },
+      {
+        "name": "Arostote",
+        "position": "Directeur Logistique",
+        "photo": "photos/Umondi.jpeg"
+      }
+    ]
+  },
+  "products": {
+    "featured": [
+      {
+        "name": "Montre luxueux",
+        "description": "Montre avec plusieurs fonctionnalités",
+        "price": 99.99,
+        "currency": "€",
+        "image": "photos/Montre.jpeg"
+      },
+      {
+        "name": "Lunette",
+        "description": "Lunette du soleil, protection contre les UV",
+        "price": 49.99,
+        "currency": "€",
+        "image": "photos/Lunette.jpeg"
+      },
+      {
+        "name": "Canapé",
+        "description": "Canapé souple et agréable pour le repos",
+        "price": 1689.99,
+        "currency": "$",
+        "image": "photos/Canapé.jpeg"
+      }
+    ],
+    "categories": [
+      {
+        "name": "1$ à 50$",
+        "id": "cat1"
+      },
+      {
+        "name": "50$ à 100$",
+        "id": "cat2"
+      },
+      {
+        "name": "100$ à 500$",
+        "id": "cat3"
+      },
+      {
+        "name": "500$ à 1000$",
+        "id": "cat4"
+      }
+    ],
+    "items": [
+      {
+        "name": "Accessoires de beauté",
+        "description": "Kit complet pour accessoires de beauté",
+        "price": 30.99,
+        "original_price": 19.99,
+        "discount": 5,
+        "currency": "$",
+        "image": "photos/Accessoire de beauté.jpeg"
+      },
+      {
+        "name": "Appareil photo",
+        "description": "Meilleure sonorisation avec réduction de bruit",
+        "price": 699.99,
+        "original_price": 399.99,
+        "discount": 20,
+        "currency": "$",
+        "image": "photos/Appareil photo.jpeg"
+      },
+      {
+        "name": "Canapé Sisco",
+        "description": "Meilleure sonorisation avec réduction de bruit",
+        "price": 1699.99,
+        "original_price": 1199.99,
+        "discount": 20,
+        "currency": "$",
+        "image": "photos/Canapé.jpeg"
+      }
+    ]
+  },
+  "blog": {
+    "posts": [
+      {
+        "title": "Comment choisir le bon produit pour vos besoins",
+        "date": "12 juin 2023",
+        "category": "Conseils",
+        "image": "photos/Lotion hydratante.jpeg",
+        "excerpt": "Pour faire un choix du produit assurez-vous d'avoir bien parcouru le catalogue de notre produit et choisissez un produit qui vous semble meilleur..."
+      }
+    ],
+    "categories": [
+      {
+        "name": "Conseils",
+        "count": 5
+      },
+      {
+        "name": "Nouveautés",
+        "count": 3
+      },
+      {
+        "name": "Tutoriels",
+        "count": 7
+      }
+    ]
+  },
+  "cart": {
+    "items": [
+      {
+        "name": "Chemise",
+        "variant": "Couleur: Noir, Taille: M",
+        "price": 99.99,
+        "quantity": 1,
+        "image": "photos/Chemise.jpeg"
+      }
+    ],
+    "summary": {
+      "subtotal": 99.99,
+      "shipping": 0,
+      "discount": 0,
+      "total": 99.99,
+      "currency": "€"
+    }
+  },
+  "admin": {
+    "stats": {
+      "total_sales": 12345,
+      "orders": 56,
+      "customers": 124,
+      "products_in_stock": 342,
+      "low_stock": 12
+    },
+    "recent_orders": [
+      {
+        "id": "#12345",
+        "customer": "Jean Dupont",
+        "date": "12/06/2023",
+        "amount": 119.98,
+        "status": "Livré",
+        "currency": "$"
+      }
+    ]
+  }
+}

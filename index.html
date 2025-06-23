@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteShop - Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="web1.html">EliteShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Panier
+                            <span class="badge bg-primary">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user"></i> Mon compte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main class="container my-5">
+    <!-- Carousel -->
+   <div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="photos/Annonce Reduction.jpeg" class="d-block w-100" alt="Promotion 1">
+            </div>
+            <div class="carousel-item">
+                <img src="photos/Annonce Reduction.jpeg" class="d-block w-100" alt="Promotion 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <body>
+
+    <!-- Produits en vedette -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4">Produits en vedette</h2>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="photos/Montre.jpeg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Montre luxueux</h5>
+                        <p class="card-text">Montre avec plusieurs fonctionnalité.</p>
+                        <p class="text-success">€99.99</p>
+                        <a href="product-details.html" class="btn btn-primary">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="photos/Lunette.jpeg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunette</h5>
+                        <p class="card-text">Lunette du soleil, protection contre les UV</p>
+                        <p class="text-success">€49.99</p>
+                        <a href="product-details.html" class="btn btn-primary">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="photos/Canapé.jpeg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Canapé</h5>
+                        <p class="card-text">Canapé souple et agréable pour le repos.</p>
+                        <p class="text-success">$1689.99</p>
+                        <a href="product-details.html" class="btn btn-primary">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Répéter pour d'autres produits -->
+        </div>
+    </section>
+
+    <!-- Section promotionnelle -->
+    <section class="bg-light p-5 rounded mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Promotion spéciale!</h3>
+                <p>Profitez de nos offres exclusives pour un temps limité.</p>
+                <a href="products.html" class="btn btn-danger">Voir les offres</a>
+            </div>
+            <div class="col-md-6">
+                <img src="images/promo.jpg" alt="Promotion" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>EliteShop</h5>
+                    <p>Notre site est le meilleur dans le domaine de commerce en ligne, certifié par Microsft. Depuis 2023 nous avons connus une ascension fulgurante dans ce domaine, car nos client sont toujours satisfait de nos service.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="products.html" class="text-white">Produits</a></li>
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        Email: <a href="mailto:contact@example.com" class="text-white">contacteliteshop@gmail.com</a><br>
+                        Téléphone: +243 893061955
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 EliteShop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

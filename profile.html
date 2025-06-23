@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteShop - Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="web1.html">EliteShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Panier
+                            <span class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user"></i> Mon compte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<main class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <img src="images/avatar.jpg" alt="Avatar" class="rounded-circle mb-3" width="150">
+                    <h5>Umondi Joel</h5>
+                    <p class="text-muted">Membre depuis juin 2023</p>
+                    
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#profile" data-bs-toggle="tab">
+                                <i class="fas fa-user me-2"></i> Profil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#orders" data-bs-toggle="tab">
+                                <i class="fas fa-shopping-bag me-2"></i> Commandes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#addresses" data-bs-toggle="tab">
+                                <i class="fas fa-map-marker-alt me-2"></i> Adresses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#security" data-bs-toggle="tab">
+                                <i class="fas fa-lock me-2"></i> Sécurité
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-8">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="profile">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Informations personnelles</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Prénom</label>
+                                        <input type="text" class="form-control" value="Saisissez votre prénom">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nom</label>
+                                        <input type="text" class="form-control" value="Saisissez votre nom">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" value="Saisissez votre email">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Téléphone</label>
+                                        <input type="tel" class="form-control" value="Saisissez votre numéro">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Date de naissance</label>
+                                        <input type="date" class="form-control" value="1985-05-15">
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="orders">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Historique des commandes</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Commande</th>
+                                            <th>Date</th>
+                                            <th>Statut</th>
+                                            <th>Total</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>12/06/2023</td>
+                                            <td><span class="badge bg-success">Livré</span></td>
+                                            <td>€119.98</td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Détails</a>
+                                            </td>
+                                        </tr>
+                                        <!-- Plus de commandes -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="addresses">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Adresses</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Adresse de livraison</h6>
+                                            <address>
+                                                12 Rue des évolués<br>
+                                                7502 Kinshasa<br>
+                                                République Démocratique du Congo
+                                            </address>
+                                            <button class="btn btn-sm btn-outline-primary">Modifier</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Adresse de facturation</h6>
+                                            <address>
+                                                12 Rue des évolués<br>
+                                                7502 Kinshasa<br>
+                                                République Démocratique du Congo
+                                            </address>
+                                            <button class="btn btn-sm btn-outline-primary">Modifier</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Ajouter une adresse</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="security">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Sécurité</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Mot de passe actuel</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nouveau mot de passe</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirmer le nouveau mot de passe</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>EliteShop</h5>
+                    <p>Notre site est le meilleur dans le domaine de commerce en ligne, certifié par Microsft. Depuis 2023 nous avons connus une ascension fulgurante dans ce domaine, car nos client sont toujours satisfait de nos service.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="products.html" class="text-white">Produits</a></li>
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        Email: <a href="mailto:contact@example.com" class="text-white">contacteliteshop@gmail.com</a><br>
+                        Téléphone: +243 893061955
+                        
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 EliteShop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

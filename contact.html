@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteShop - Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="web1.html">EliteShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Panier
+                            <span class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user"></i> Mon compte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<main class="container my-5">
+    <h2 class="mb-4">Contactez-nous</h2>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nom</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Sujet</label>
+                            <select class="form-select">
+                                <option>Question sur un produit</option>
+                                <option>Problème avec ma commande</option>
+                                <option>Retour/remboursement</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Informations de contact</h5>
+                    <address class="mb-4">
+                        <strong>EliteShop</strong><br>
+                        4 ème Rue Limete Indistriel<br>
+                        OOO1 Kinshasa, République Démocratique du Congo<br>
+                        <i class="fas fa-phone me-2"></i> +24 38 93 06 19 55<br>
+                        <i class="fas fa-envelope me-2"></i> contact@example.com
+                    </address>
+                    
+                    <h5 class="card-title">Heures d'ouverture</h5>
+                    <p>
+                        <strong>Lundi - Vendredi:</strong> 9h - 18h<br>
+                        <strong>Samedi:</strong> 10h - 16h<br>
+                        <strong>Dimanche:</strong> Fermé
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">FAQ</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Comment passer une commande?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Pour passer une commande, ajoutez les produits à votre panier, puis cliquez sur "Passer la commande". Suivez ensuite les étapes pour compléter votre achat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Comment passer une commande?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Pour passer une commande, ajoutez les produits à votre panier, puis cliquez sur "Passer la commande". Suivez ensuite les étapes pour compléter votre achat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Comment passer une commande?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Pour passer une commande, ajoutez les produits à votre panier, puis cliquez sur "Passer la commande". Suivez ensuite les étapes pour compléter votre achat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plus de questions -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ElitShop</h5>
+                    <p>Notre site est le meilleur dans le domaine de commerce en ligne, certifié par Microsft. Depuis 2023 nous avons connus une ascension fulgurante dans ce domaine, car nos client sont toujours satisfait de nos service.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="products.html" class="text-white">Produits</a></li>
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        Email: <a href="mailto:contact@example.com" class="text-white">contacteliteshop@gmail.com</a><br>
+                        Téléphone: +243 893061955
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 EliteShop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

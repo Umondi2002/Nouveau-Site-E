@@ -1,0 +1,71 @@
+/* Styles de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cartes de produits */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Boutons */
+.btn {
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}
+
+/* Formulaire */
+.form-control, .form-select {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+/* Pied de page */
+footer {
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+}
+
+/* Admin */
+.sidebar {
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+.sidebar .nav-link {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+}

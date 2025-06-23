@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteShop - Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="web1.html">EliteShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Panier
+                            <span class="badge bg-primary">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user"></i> Mon compte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<main class="container my-5">
+    <h2 class="mb-4">Paiement</h2>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Informations de livraison</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Adresse</label>
+                                <input type="text" class="form-control" placeholder="Rue et numéro">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Ville</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Pays</label>
+                                <select class="form-select">
+                                    <option>R.D.Congo</option>
+                                    <option>France</option>
+                                    <option>Belgique</option>
+                                    <option>Suisse</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Code postal</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="saveAddress">
+                                    <label class="form-check-label" for="saveAddress">
+                                        Enregistrer ces informations pour la prochaine fois
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Méthode de paiement</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="creditCard" checked>
+                            <label class="form-check-label" for="creditCard">
+                                Carte de crédit
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="paypal">
+                            <label class="form-check-label" for="paypal">
+                                PayPal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="bankTransfer">
+                            <label class="form-check-label" for="bankTransfer">
+                                Virement bancaire
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="credit-card-form">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">Numéro de carte</label>
+                                <input type="text" class="form-control" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nom sur la carte</label>
+                                <input type="text" class="form-control" placeholder="Entrez votre nom">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Date d'expiration</label>
+                                <input type="text" class="form-control" placeholder="MM/AA">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">CVV</label>
+                                <input type="text" class="form-control" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Votre commande</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div>
+                            <h6>Nom du produit</h6>
+                            <small class="text-muted">1 × €99.99</small>
+                        </div>
+                        <span>$99.99</span>
+                    </div>
+                    <!-- Plus d'articles -->
+                    
+                    <hr>
+                    
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Sous-total</span>
+                            <span>$99.99</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Livraison</span>
+                            <span>Gratuite</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Taxes</span>
+                            <span>$19.99</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">
+                            <span>Total</span>
+                            <span>$119.98</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms">
+                        <label class="form-check-label" for="terms">
+                            J'accepte les <a href="#">conditions générales</a>
+                        </label>
+                    </div>
+                    
+                    <button class="btn btn-primary w-100">Confirmer la commande</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>EliteShop</h5>
+                    <p>Notre site est le meilleur dans le domaine de commerce en ligne, certifié par Microsft. Depuis 2023 nous avons connus une ascension fulgurante dans ce domaine, car nos client sont toujours satisfait de nos service.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="products.html" class="text-white">Produits</a></li>
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        Email: <a href="mailto:contact@example.com" class="text-white">contacteliteshop@gmail.com</a><br>
+                        Téléphone: +243 893061955
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 EliteShop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
